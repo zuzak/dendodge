@@ -79,7 +79,7 @@ if ($minutes > 0) {
 	}
 }
 echo "$secondsout";
-if (round($secondsout,2) == 1) {
+if (round($seconds,2) == 1) {
   echo " second";
 } else {
   echo " seconds";
