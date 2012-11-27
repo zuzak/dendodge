@@ -1,0 +1,299 @@
+@import url(http://fonts.googleapis.com/css?family=Signika:600);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext);
+@import url(privacydeed.css);
+
+/* USEFUL COLOURS
+#F38630 - header (light orange)
+#FA6900 - navbar (darker orange)
+#A7DBD8 - body background (light blue)
+#E0E4CC - footer (greenish grey)
+#C8CCB7 - footer top border (slightly darker)
+#FFF    - content background (white)
+#7D8072 - text (dark grey)
+#1693A5 - links (dark blue)
+#A552B5 - visited links (purple)
+*/
+
+/* Animate the footer */
+@keyframes footer
+{
+from {bottom:-100px;}
+to {bottom:0px;}
+}
+/* The vendor-specific rules below don't validate, but they're correct, and hopefully they won't be around for long */
+@-moz-keyframes footer /* Firefox */
+{
+from {bottom:-100px;}
+to {bottom:0px;}
+}
+@-webkit-keyframes footer /* Safari and Chrome */
+{
+from {bottom:-100px;}
+to {bottom:0px;}
+}
+@-o-keyframes footer /* Opera */
+{
+from {bottom:-100px;}
+to {bottom:0px;}
+}
+
+.center {
+text-align:center;
+}
+
+.lower {
+text-transform:lowercase !important;
+}
+
+.smallnote {
+color:gray;
+font-size:10px;
+}
+
+.translation {
+border-bottom:1px dotted;
+}
+
+.translation:hover,abbr:hover {
+cursor:help;
+}
+
+a {
+color:#1693A5;
+text-decoration:none;
+}
+
+a:hover {
+color:#F38630!important;
+text-decoration:underline;
+}
+
+a:visited {
+color:#A552B5;
+}
+
+address {
+font-style:normal !important;
+}
+
+body {
+background-color:#A7DBD8;
+background-image:url(images/theme/background.png);
+background-position:center top;
+background-repeat:repeat-y;
+color:#7D8072;
+font-family:'Droid Sans', 'Open Sans', sans-serif;
+}
+
+cite.section {
+font-style:normal;
+}
+cite.section:before {
+content:open-quote;
+}
+cite.section:after {
+content:close-quote;
+}
+
+details summary {
+padding:5px;
+}
+
+details summary:hover {
+cursor:pointer;
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D9D9D9));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D9D9D9 100%);
+/* W3C Markup, IE10 Release Preview */ 
+/* background: linear-gradient(to bottom, #FFFFFF 0%, #D9D9D9 100%); */
+}
+
+div.container {
+margin-left:auto;
+margin-right:auto;
+max-width:960px;
+padding:0!important;
+}
+
+div.content {
+background-color:#FFF;
+margin-bottom:-12px;
+margin-left:auto;
+margin-right:auto;
+max-width:950px;
+padding:10px;
+position:relative;
+top:-50px;
+}
+
+div.footer {
+background-color:#E0E4CC;
+border-top:5px solid #C8CCB7;
+bottom:0;
+font-size:80%;
+margin-left:auto;
+margin-right:auto;
+padding:6px;
+position:fixed;
+text-transform:lowercase;
+width:949px;
+animation:footer 1s;
+-moz-animation:footer 1s; /* Firefox */
+-webkit-animation:footer 1s; /* Safari and Chrome */
+-o-animation:footer 1s; /* Opera */
+}
+
+div.header {
+background-color:#F38630;
+color:#FFF;
+font-family:Signika, sans-serif;
+font-size:100pt;
+height:150px;
+margin-left:auto;
+margin-right:auto;
+max-width:960px;
+padding-right:10px;
+position:relative;
+text-align:right;
+top:-8px;
+z-index:2;
+}
+
+div.nav {
+background-color:#FA6900;
+height:50px;
+margin-left:auto;
+margin-right:auto;
+max-width:970px;
+position:relative;
+top:-8px;
+z-index:1;
+}
+
+div.navlinks {
+color:#E0E4CC;
+font-size:25pt;
+left:-15px;
+position:relative;
+top:-55px;
+z-index:4;
+}
+
+div.navlinks a,div.navlinks a:visited {
+color:#FFF;
+}
+
+div.navlinks a:hover {
+color:#69D2E7!important;
+text-decoration:none;
+}
+
+div.validation,img.right {
+float:right;
+}
+
+em {
+color:#F38630;
+}
+
+h1 {
+font-size:1em;
+margin:0;
+position:relative;
+top:22px;
+z-index:3;
+}
+
+h2 {
+color:#FA6900;
+font-family:Signika, sans-serif;
+font-size:30pt;
+margin-bottom:10px;
+margin-top:10px;
+text-transform:lowercase;
+}
+
+h3 {
+color:#F38630;
+font-family:Signika, sans-serif;
+font-size:20pt;
+margin-bottom:10px;
+margin-top:10px;
+text-transform:lowercase;
+}
+
+html {
+overflow-y:scroll;
+}
+
+img {
+border:0;
+}
+
+img.bigimg {
+position:relative;
+right:-10px;
+top:-10px;
+}
+
+img.rightmargin {
+margin-right:5px;
+}
+
+img.thumb {
+opacity:0.8;
+}
+
+img.thumb:hover {
+opacity:1;
+}
+
+img.thumbnolink {
+opacity:0.7;
+}
+
+img.validation,a.validation,img.thumb,a.thumb {
+border:none!important;
+}
+
+input {
+background-color:#F38630;
+border-color:#FA6900;
+font-family:'Droid Sans', 'Open Sans', sans-serif;
+}
+
+input[type="button"],input[type="submit"] {
+text-transform:lowercase;
+}
+
+input[type="button"]:hover,input[type="submit"]:hover {
+background-color:#F39449;
+}
+
+input[type="number"],input[type="text"] {
+background-color:#F38630;
+border:1px solid #FA6900;
+}
+
+span.currentpage {
+color:#69D2E7;
+}
+
+strong {
+color:#FA6900;
+}
+
+ul {
+list-style:square outside url(images/theme/bullet.png);
+}
+
+ul.navlinks {
+display:inline;
+}
+
+ul.navlinks li {
+display:inline;
+margin-right:50px;
+}
