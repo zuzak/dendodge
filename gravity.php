@@ -1,17 +1,5 @@
 <h2>Gravity</h2>
 <?php
-// Get the URL of the current page
-function curPageURL() {
- $pageURL = 'http';
- $pageURL .= "://";
- if ($_SERVER["SERVER_PORT"] != "80") {
-  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
- } else {
-  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
- }
- return $pageURL;
-}
-$url = curPageURL();
 // Define constants
 $G = 6.67384 * pow(10,-11); //Gravitational constant
 $m = 5.9736 * pow(10,24);   //Mass of the Earth
