@@ -44,35 +44,28 @@ if (number_format($height) == 1) {
 echo "in a vacuum, it would take <strong>";
 //Convert time to h:m:s
 $seconds = $t % 60;
-$time = ($t - $seconds) / 60;
-$minutes = $time % 60;
-$hours = ($time - $minutes) / 60;
 $remainder = $t - $seconds;
-$secondsout = round($seconds + $remainder);
-//Check plurals
-if (round($hours,2) > 0) {
-	echo(number_format($hours));
-	if (round($hours,2) == 1) {
-	  echo " hour, ";
-	} else {
-	  echo " hours, ";
-	}
-}
-if ($minutes > 0) {
-	echo "$minutes";
-	if (round($minutes,2) == 1) {
-	  echo " minute and ";
-	} else {
-	  echo " minutes and ";
-	}
-}
-echo "$secondsout";
-if (round($seconds,2) == 1) {
-  echo " second";
-} else {
-  echo " seconds";
-}
 //Print to screen
+if((int)date("H",$t) != 0) {
+	if((int)date("H",$t) == 1) {
+		echo (int)date("H",$t) . " hour, ";
+	} else {
+		echo (int)date("H",$t) . " hours, ";
+	}
+}
+if((int)date("i",$t) != 0) {
+	if((int)date("i",$t) == 1) {
+		echo (int)date("i",$t) . " minute, ";
+	} else {
+		echo (int)date("i",$t) . " minutes, ";
+	}
+}
+echo (int)date("s",$t + $remainder);
+if((int)date("s",$t + $remainder) == 1) {
+	echo " second ";
+} else {
+	echo " seconds";
+}
 echo "</strong> (" . number_format($t,2) . "&nbsp;s) to reach the ground, and would hit the ground at a speed of <strong>" . number_format($v,2) . "</strong> metres per second (<strong>" . number_format($mph,2) . "</strong> miles per hour).<br/><br/><small>Note that these values are approximations, and are only accurate for heights and masses that are much smaller than the radius of the earth (<i>h << r</i>, <i>m << M</i>).</small><br/><br/>";
 echo '<a href="?p=gravity"><input type="button" value="Use another number" /></a>';
 ?>
