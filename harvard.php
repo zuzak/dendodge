@@ -1,3 +1,4 @@
+<h2>Harvard Citation Generator</h2>
 <?php
 if (!isset($_GET["type"])) {
 	//If type is not set, show the form
