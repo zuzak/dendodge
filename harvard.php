@@ -1,7 +1,7 @@
 <?php
 if (!isset($_GET["type"])) {
 	//If type is not set, show the form
-	echo "<form action=\".\" method=\"get\" novalidate=\"novalidate\"><input type=\"hidden\" name=\"p\" value=\"harvard\" /><label for=\"type\"><fieldset><legend>work</legend> <strong>Type of work:</strong> <input type=\"radio\" name=\"type\" id=\"book\" value=\"book\" checked=\"checked\" /> <label for=\"book\">Book</label> <input type=\"radio\" name=\"type\" id=\"journal\" value=\"journal\" /> <label for=\"journal\">Journal</label><br/><label for=\"title\"><strong>Title:</strong></label> <input type=\"text\" name=\"title\" id=\"title\" required=\"required\" placeholder=\"required\" size=\"106\" /><br/><label for=\"year\"><strong>Year of first publication:</strong></label> <input type=\"number\" name=\"year\" id=\"year\" required=\"required\" placeholder=\"required\" maxlength=\"4\" /> <label for=\"pages\" class=\"labelwidth\"><strong>Page(s):</strong></label> <input type=\"text\" name=\"pages\" id=\"pages\" /> (e.g., \"3\" or \"6-10\")</fieldset><fieldset><legend>authors</legend><strong>Author 1:</strong> <input type=\"text\" name=\"fn\" id=\"fn\" required=\"required\" placeholder=\"First name (required)\" /> <input type=\"text\" name=\"sn\" id=\"sn\" required=\"required\" placeholder=\"Surname (required)\" /><br/><strong>Author 2:</strong> <input type=\"text\" name=\"fn2\" id=\"fn2\" placeholder=\"First name\" /> <input type=\"text\" name=\"sn2\" id=\"sn2\" placeholder=\"Surname\" /><br/><label for=\"threeauthors\">Check this box if the work has three or more authors:</label> <input type=\"checkbox\" name=\"threeauthors\" id=\"threeauthors\" value=\"1\" /></fieldset><br/><em>Fill in the one applicable fieldset below:</em><fieldset><legend>book</legend><label for=\"chapter\" class=\"labelwidth\">Chapter name:</label> <input type=\"text\" name=\"chapter\" id=\"chapter\" /> (e.g., \"Chapter One\" or \"The Boy Who Lived\")<br/><label for=\"place\" class=\"labelwidth\">Place of publication:</label> <input type=\"text\" name=\"place\" id=\"place\" /> (e.g., \"London\")<br/><label for=\"editor\" class=\"labelwidth\">Editor:</label> <input type=\"text\" name=\"editor\" id=\"editor\" /> (e.g., \"Doe, J\")<br/><label for=\"pub\" class=\"labelwidth\">Publisher:</label> <input type=\"text\" name=\"pub\" id=\"pub\" /> (e.g., \"Harvard University Press\")</fieldset><fieldset><legend>journal</legend><label for=\"journal\" class=\"labelwidth\">Journal name:</label> <input type=\"text\" name=\"journal\" id=\"journal\" placeholder=\"required\" /> (e.g., \"Nature\")<br/><label for=\"vol\" class=\"labelwidth\">Volume:</label> <input type=\"text\" name=\"vol\" id=\"vol\" /> (e.g., \"12\")<br/><label for=\"part\" class=\"labelwidth\">Part:</label> <input type=\"text\" name=\"part\" id=\"part\" /> (e.g., \"2\"; only used when a volume is specified)</fieldset><input type=\"submit\" value=\"Harvardise me!\" /></form>";
+	echo "<form action=\".\" method=\"get\" novalidate=\"novalidate\"><input type=\"hidden\" name=\"p\" value=\"harvard\" /><fieldset><legend>work</legend> <strong>Type of work:</strong> <input type=\"radio\" name=\"type\" id=\"book\" value=\"book\" checked=\"checked\" /> <label for=\"book\">Book</label> <input type=\"radio\" name=\"type\" id=\"journal\" value=\"journal\" /> <label for=\"journal\">Journal</label><br/><label for=\"title\"><strong>Title:</strong></label> <input type=\"text\" name=\"title\" id=\"title\" required=\"required\" placeholder=\"required\" size=\"106\" /><br/><label for=\"year\"><strong>Year of first publication:</strong></label> <input type=\"number\" name=\"year\" id=\"year\" required=\"required\" placeholder=\"required\" /> <label for=\"pages\" class=\"labelwidth\"><strong>Page(s):</strong></label> <input type=\"text\" name=\"pages\" id=\"pages\" /> (e.g., \"3\" or \"6-10\")</fieldset><fieldset><legend>authors</legend><strong>Author 1:</strong> <input type=\"text\" name=\"fn\" id=\"fn\" required=\"required\" placeholder=\"First name (required)\" /> <input type=\"text\" name=\"sn\" id=\"sn\" required=\"required\" placeholder=\"Surname (required)\" /><br/><strong>Author 2:</strong> <input type=\"text\" name=\"fn2\" id=\"fn2\" placeholder=\"First name\" /> <input type=\"text\" name=\"sn2\" id=\"sn2\" placeholder=\"Surname\" /><br/><label for=\"threeauthors\">Check this box if the work has three or more authors:</label> <input type=\"checkbox\" name=\"threeauthors\" id=\"threeauthors\" value=\"1\" /></fieldset><br/><em>Fill in the one applicable fieldset below:</em><fieldset><legend>book</legend><label for=\"chapter\" class=\"labelwidth\">Chapter name:</label> <input type=\"text\" name=\"chapter\" id=\"chapter\" /> (e.g., \"Chapter One\" or \"The Boy Who Lived\")<br/><label for=\"place\" class=\"labelwidth\">Place of publication:</label> <input type=\"text\" name=\"place\" id=\"place\" /> (e.g., \"London\")<br/><label for=\"editor\" class=\"labelwidth\">Editor:</label> <input type=\"text\" name=\"editor\" id=\"editor\" /> (e.g., \"Doe, J\")<br/><label for=\"pub\" class=\"labelwidth\">Publisher:</label> <input type=\"text\" name=\"pub\" id=\"pub\" /> (e.g., \"Harvard University Press\")</fieldset><fieldset><legend>journal</legend><label for=\"journalname\" class=\"labelwidth\">Journal name:</label> <input type=\"text\" name=\"journalname\" id=\"journalname\" placeholder=\"required\" /> (e.g., \"Nature\")<br/><label for=\"vol\" class=\"labelwidth\">Volume:</label> <input type=\"text\" name=\"vol\" id=\"vol\" /> (e.g., \"12\")<br/><label for=\"part\" class=\"labelwidth\">Part:</label> <input type=\"text\" name=\"part\" id=\"part\" /> (e.g., \"2\"; only used when a volume is specified)</fieldset><input type=\"submit\" value=\"Harvardise me!\" /></form>";
 	include 'footer.php';
 	die();
 }
@@ -23,7 +23,7 @@ $title = $_GET["title"];
 $place = $_GET["place"];
 $publisher = $_GET["pub"];
 $pages = $_GET["pages"];
-$journal = $_GET["journal"];
+$journal = $_GET["journalname"];
 $volume = $_GET["vol"];
 $part = $_GET["part"];
 //Bracketed "cite as" version (should be the same for everything)
@@ -89,10 +89,11 @@ else if ($type == "journal") {
 	if (!empty($volume)) {
 		echo "$volume";
 		if (!empty($part)) {
-			echo " ($part)";
+			echo " ($part).";
+		} else {
+			echo ".";
 		}
 	}
-	echo ".";
 }
 //END JOURNAL
 ?>
