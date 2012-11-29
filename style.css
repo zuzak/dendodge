@@ -258,23 +258,23 @@ img.validation,a.validation,img.thumb,a.thumb {
 border:none!important;
 }
 
-input {
+input[type="button"],input[type="submit"] {
+text-transform:lowercase;
 background-color:#F38630;
 border-color:#FA6900;
 font-family:'Droid Sans', 'Open Sans', sans-serif;
 }
 
-input[type="button"],input[type="submit"] {
-text-transform:lowercase;
-}
-
 input[type="button"]:hover,input[type="submit"]:hover {
 background-color:#F39449;
+border-color:#FA6900;
+font-family:'Droid Sans', 'Open Sans', sans-serif;
 }
 
-input[type="number"],input[type="text"] {
-background-color:#F38630;
-border:1px solid #FA6900;
+label.labelwidth {
+display:inline-block;
+width:200px;
+text-align:right;
 }
 
 span.currentpage {
