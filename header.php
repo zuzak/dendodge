@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- header.php -->
-<!-- CUDDLES ARE NICE -->
 	<head>
 		<meta charset="UTF-8" />
 		<link href="style.css" rel="stylesheet" type="text/css"/>
@@ -26,7 +25,6 @@
 			}
 		}
 		?>
-		</script>
 	</head>
 	<body>
 		<div class="container">
