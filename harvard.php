@@ -110,5 +110,5 @@ else if ($type == "website") {
 	echo " ($year), <i>$title</i>. Available: $url. Last accessed " . date("j F Y",strtotime($accessdate)) . "."; //Everything is required, so just format & echo
 }
 //END WEBSITE
-echo "<br/><br/><a href=\"?p=harvard\"><button value=\"Harvardize something else!\" /></a>";
+echo "<br/><br/><form method=\"link\" action=\"?p=harvard\"><input type=\"button\" value=\"Harvardize something else!\"></form>";
 ?>
