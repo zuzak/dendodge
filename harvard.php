@@ -33,7 +33,7 @@ echo "<strong>Cite as:</strong> ($surname";
 if ($threeauthors == 1) {
 	echo ", <i>et al.</i>";
 } else if (!empty($surname2)) {
-	echo " & $surname2, " . substr($firstname2,0,1);
+	echo " & $surname2";
 }
 echo ", $year";
 if (!empty($pages)) {
