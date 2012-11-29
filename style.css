@@ -15,29 +15,6 @@
 #A552B5 - visited links (purple)
 */
 
-/* Animate the footer */
-@keyframes footer
-{
-from {bottom:-100px;}
-to {bottom:0px;}
-}
-/* The vendor-specific rules below don't validate, but they're correct, and hopefully they won't be around for long */
-@-moz-keyframes footer /* Firefox */
-{
-from {bottom:-100px;}
-to {bottom:0px;}
-}
-@-webkit-keyframes footer /* Safari and Chrome */
-{
-from {bottom:-100px;}
-to {bottom:0px;}
-}
-@-o-keyframes footer /* Opera */
-{
-from {bottom:-100px;}
-to {bottom:0px;}
-}
-
 .center {
 text-align:center;
 }
