@@ -1,11 +1,13 @@
 <h2>Harvard Citation Generator</h2>
 <script type="text/javascript">
+$(document).ready(function(){
 $("input[name='type']").change(function() {
   $("#boxBook").toggle(this.value == "book");
   $("#boxJournal").toggle(this.value == "journal");
   $("#boxWebsite").toggle(this.value == "website");
 });
 $("input[name='type']:checked").change(); //trigger correct state onload
+});
 </script>
 <?php
 if (!isset($_GET["type"])) {
