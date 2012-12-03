@@ -25,17 +25,6 @@
 				echo "<li><a href=\"?p=$page\">$page</a></li>";
 			}
 		}
-		if ($_GET["p"] == harvard) {
-			echo "<script type=\"text/javascript\">
-				function chooseFieldset(id) {
-					document.getElementById('boxBook'   ).style.display =
-						(id == 'book')   ?'display':'none';
-					document.getElementById('boxJournal').style.display =
-						(id == 'journal')?'display':'none';
-					document.getElementById('boxWebsite').style.display =
-						(id == 'website')?'display':'none';
-				}
-			</script>";
 		?>
 	</head>
 	<body>
