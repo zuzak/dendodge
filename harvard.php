@@ -112,3 +112,12 @@ else if ($type == "website") {
 //END WEBSITE
 echo "<br/><br/><form action=\".\" method=\"get\"><input type=\"hidden\" name=\"p\" value=\"harvard\" /><input type=\"submit\" value=\"Harvardize something else!\"></form>";
 ?>
+<script type="text/javascript">
+$('#boxBook, #boxJournal, #boxWebsite').hide();
+
+$('input:radio[name="type"]').change(function(){
+    var id = $(this).attr('data-targets'); // or: $(this).data('targets');
+    $('fieldset[id^="box"]').hide();
+    $('#box' + id).show();
+});
+</script>
