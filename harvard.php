@@ -8,8 +8,8 @@ $('#boxBook, #boxJournal, #boxWebsite').hide();
 
 $('input:radio[name=\"type\"]').change(function() {
     var id = $(this).attr('data-targets'); // or: $(this).data('targets');
-    $('fieldset[id^=\"box\"]').hide();
-    $('#' + id).show();
+    $('fieldset[id^=\"box\"]').hide(300);
+    $('#' + id).show(300);
 });
 </script>";
 	include('footer.php');
