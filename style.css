@@ -236,6 +236,18 @@ border:none!important;
 }
 
 input[type="button"],input[type="submit"] {
+background-image: linear-gradient(bottom, #FA6800 46%, #F38430 73%);
+background-image: -o-linear-gradient(bottom, #FA6800 46%, #F38430 73%);
+background-image: -moz-linear-gradient(bottom, #FA6800 46%, #F38430 73%);
+background-image: -webkit-linear-gradient(bottom, #FA6800 46%, #F38430 73%);
+background-image: -ms-linear-gradient(bottom, #FA6800 46%, #F38430 73%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.46, #FA6800),
+	color-stop(0.73, #F38430)
+);
 text-transform:lowercase;
 background-color:#F38630;
 border-color:#FA6900;
@@ -243,7 +255,38 @@ font-family:'Droid Sans', 'Open Sans', sans-serif;
 }
 
 input[type="button"]:hover,input[type="submit"]:hover {
+background-image: linear-gradient(bottom, #F38430 46%, #F39349 73%);
+background-image: -o-linear-gradient(bottom, #F38430 46%, #F39349 73%);
+background-image: -moz-linear-gradient(bottom, #F38430 46%, #F39349 73%);
+background-image: -webkit-linear-gradient(bottom, #F38430 46%, #F39349 73%);
+background-image: -ms-linear-gradient(bottom, #F38430 46%, #F39349 73%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.46, #F38430),
+	color-stop(0.73, #F39349)
+);
 background-color:#F39449;
+border-color:#FA6900;
+font-family:'Droid Sans', 'Open Sans', sans-serif;
+}
+
+input[type="button"]:active,input[type="submit"]:active {
+background-image: linear-gradient(bottom, #F38430 46%, #FA6800 73%);
+background-image: -o-linear-gradient(bottom, #F38430 46%, #FA6800 73%);
+background-image: -moz-linear-gradient(bottom, #F38430 46%, #FA6800 73%);
+background-image: -webkit-linear-gradient(bottom, #F38430 46%, #FA6800 73%);
+background-image: -ms-linear-gradient(bottom, #F38430 46%, #FA6800 73%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.46, #F38430),
+	color-stop(0.73, #FA6800)
+);
+text-transform:lowercase;
+background-color:#F38630;
 border-color:#FA6900;
 font-family:'Droid Sans', 'Open Sans', sans-serif;
 }
