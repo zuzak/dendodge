@@ -26,6 +26,15 @@
 			}
 		}
 		?>
+<script type="text/javascript">
+$('#boxBook, #boxJournal, #boxWebsite').hide();
+
+$('input:radio[name="type"]').change(function(){
+    var id = $(this).attr('data-targets'); // or: $(this).data('targets');
+    $('fieldset[id^="box"]').hide();
+    $('#box' + id).show();
+});
+</script>
 	</head>
 	<body>
 		<div class="container">
