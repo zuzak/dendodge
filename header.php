@@ -6,7 +6,6 @@
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<link href="favicon.ico" rel="icon" type="image/png"/>
 		<link rel="profile" href="http://microformats.org/profile/hcalendar"/>
-		<script src="jquery.js"></script>
 		<?php
 		$baseurl = dirname($_SERVER['PHP_SELF']);
 		// Set the page's <title> element based on $title
@@ -26,15 +25,7 @@
 			}
 		}
 		?>
-<script type="text/javascript">
-$('#boxBook, #boxJournal, #boxWebsite').hide();
-
-$('input:radio[name="type"]').change(function(){
-    var id = $(this).attr('data-targets'); // or: $(this).data('targets');
-    $('fieldset[id^="box"]').hide();
-    $('#box' + id).show();
-});
-</script>
+<script src="jquery.js"></script>
 	</head>
 	<body>
 		<div class="container">
