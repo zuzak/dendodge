@@ -302,6 +302,10 @@ width:200px;
 text-align:right;
 }
 
+legend {
+text-transform:lowercase;
+}
+
 span.currentpage {
 color:#69D2E7;
 }
