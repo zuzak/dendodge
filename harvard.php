@@ -1,19 +1,4 @@
 <h2>Harvard Citation Generator</h2>
-<script type="text/javascript">
-$('#boxBook, #boxJournal, #boxWebsite').hide();
-// when the radio inputs whose name is equal to "type" is changed:
-$('input:radio[name="type"]').change(function(){
-    var id = this.id;
-
-    // hides all the fieldset elements whose `id` starts with "box":
-    $('fieldset[id^="box"]').hide();
-
-    // looks for the element with the id equal to
-    // `box` + upper-cased first-letter of this.id +
-    // the substring from second-letter onwards of this.id
-    $('#box' + id.replace[0].toUpperCase() + id.substring(1)).show();
-});
-</script>
 <?php
 if (!isset($_GET["type"])) {
 	//If type is not set, show the form
