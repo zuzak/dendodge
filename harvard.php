@@ -6,13 +6,13 @@ if (!isset($_GET["type"])) {
 	echo "<script type=\"text/javascript\">
 $('input:radio[name=\"type\"]').change(function() {
     $(this).siblings('input:radio[name=\"type\"]').each(function() {
-        $('#' + $(this).data('targets')).hide();
+        $('#' + $(this).data('targets')).hide(500);
     });
-    $('#' + $(this).data('targets')).show();
+    $('#' + $(this).data('targets')).show(500);
 }).filter(function() {
     return !this.checked;
 }).each(function() {
-    $('#' + $(this).data('targets')).hide();
+    $('#' + $(this).data('targets')).hide(500);
 });
 </script>";
 	include('footer.php');
