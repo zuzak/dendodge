@@ -54,6 +54,12 @@ address {
 font-style:normal !important;
 }
 
+blockquote {
+background-image:url(images/theme/blockquote.png);
+background-position:left top;
+background-repeat:no-repeat;
+}
+
 body {
 background-color:#A7DBD8;
 background-image:url(images/theme/background.png);

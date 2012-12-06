@@ -3,7 +3,7 @@
 <!-- header.php -->
 	<head>
 		<meta charset="UTF-8" />
-		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<link href="style.css" rel="stylesheet" type="text/css" title="Default style"/>
 		<link href="favicon.ico" rel="icon" type="image/png"/>
 		<link rel="profile" href="http://microformats.org/profile/hcalendar"/>
 		<?php
