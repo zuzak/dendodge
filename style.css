@@ -316,6 +316,18 @@ span.currentpage {
 color:#69D2E7;
 }
 
+a.footlink {
+display:inline-block;
+padding-right:10px;
+margin-right:6px;
+border-right:1px solid #7D8072;
+}
+
+span.spacer {
+display:inline-block;
+width:50px;
+}
+
 strong {
 color:#FA6900;
 }
