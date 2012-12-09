@@ -37,7 +37,7 @@ $place = $_GET["place"];
 $publisher = $_GET["pub"];
 if ($type == "book") {
 	$pages = $_GET["bpages"];
-elseif ($type == "journal") {
+} else if ($type == "journal") {
 	$pages = $_GET["jpages"];
 }
 $journal = $_GET["journalname"];
