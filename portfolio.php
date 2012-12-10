@@ -9,7 +9,7 @@
 			<a href="https://commons.wikimedia.org/wiki/File:USS_North_Carolina_NYNY_11306-6-46.jpg"><img src="images/ship.png" class="thumb" alt="USS North Carolina (BB-55)" title="Digitally restored photograph of the USS North Carolina (BB-55)"/></a>
 			<a href="https://commons.wikimedia.org/wiki/File:Draco_and_Ursa_Minor.jpg"><img src="images/draco.png" class="thumb" alt="Draco and Ursa Minor" title="Digitally restored image of the constellations of Draco and Ursa Minor"/></a>
 		<h3>Audio restoration</h3>
-			<strong>È Scherzo od è Follia <a href="https://commons.wikimedia.org/wiki/File:Caruso_et_al_-_%C3%88_scherzo_od_%C3%A8_follia.ogg">(info)</a></strong><br/>
+			<strong>È Scherzo od è Follia <a href="https://commons.wikimedia.org/wiki/File:Caruso_et_al_-_%C3%88_scherzo_od_%C3%A8_follia.ogg" class="ext">(info)</a></strong><br/>
 				<audio controls="controls">
 					<source src="audio/escherzoodefollia.ogg"/>
 					<a href="https://commons.wikimedia.org/wiki/File:Caruso_et_al_-_%C3%88_scherzo_od_%C3%A8_follia.ogg">È Scherzo od è Follia</a>

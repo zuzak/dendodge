@@ -31,7 +31,7 @@
 		<div class="container">
 		<div class="header"><header><h1>dendodge</h1></header></div>
 		<div class="nav"></div>
-		<div class="navlinks"><map name="navigation"><nav><ul class="navlinks">
+		<div class="navlinks"><nav><ul class="navlinks">
 		<?php
 		// Create navbar using function defined above
 		navlink("home",$title,$baseurl);
@@ -39,6 +39,6 @@
 		navlink("portfolio",$title,$baseurl);
 		navlink("contact",$title,$baseurl);
 		?>
-		</ul></nav></map></div>
+		</ul></nav></div>
 		<div class="content">
 <!--Actual content starts here-->

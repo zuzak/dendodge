@@ -50,6 +50,23 @@ a:visited {
 color:#A552B5;
 }
 
+a.ext {
+padding-right:16px;
+background-image:url('images/theme/externallink.png');
+background-position:right;
+background-repeat:no-repeat;
+}
+
+a.ext:hover {
+background-image:url('images/theme/externallink-hover.png') !important;
+}
+
+/* The following block of CSS does not currently work in most browsers to prevent a privacy exploit. But it's technically valid, and I'm keeping it here for when (if) it gets fixed. Until then, the colours for visited external links will look a bit weird
+Possible solution: Style visited external links in blue, as colour is allowed. However, this presents a minor accessibility issue. */
+a.ext:visited {
+background-image:url('images/theme/externallink-visited.png') !important;
+}
+
 address {
 font-style:normal !important;
 }
@@ -316,11 +333,8 @@ span.currentpage {
 color:#69D2E7;
 }
 
-a.footlink {
-display:inline-block;
-padding-right:10px;
-margin-right:6px;
-border-right:1px solid #7D8072;
+span.footlink:after {
+content:" | ";
 }
 
 span.spacer {
