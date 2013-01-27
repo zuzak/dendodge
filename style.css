@@ -28,7 +28,7 @@ color:gray;
 font-size:10px;
 }
 
-.translation {
+.translation, .abbr {
 border-bottom:1px dotted;
 }
 
@@ -192,6 +192,11 @@ text-decoration:none;
 
 div.validation,img.right {
 float:right;
+}
+
+div.vcard {
+padding:0 !important;
+display:inline;
 }
 
 em {
