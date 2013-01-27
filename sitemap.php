@@ -13,4 +13,4 @@
 	<li><a href="?p=harvard">Harvard citation generator</a></li>
 </ul>
 
-<a href="sitemap.xml">XML version</a>
+<a href="sitemap.xml" title="XML version"><img src="images/icons/xml.svg" alt="XML version"/></a>
