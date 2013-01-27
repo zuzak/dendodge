@@ -1,9 +1,9 @@
 	<div class="vcard">
 	<img src="images/me.jpg" alt="Photograph of George Watson" class="right bigimg photo" />
 	<h2>Contact</h2>
-		<address>
 		<h3 class="fn n"><span class="given-name">George</span> <span class="family-name">Watson</span> <a href="http://microformats.org/wiki/hcard" title="hCard enabled"><img src="images/icons/hcard.png" alt="(hCard enabled)"/></a></h3>
-		<ul>
+		<address>
+		<ul
 			<li><strong class="lower">Email:</strong> <a href="mailto:&#103;&#101;&#111;&#114;&#103;&#101;&#064;&#100;&#101;&#110;&#100;&#111;&#100;&#103;&#101;&#046;&#109;&#101;" class="email">&#103;&#101;&#111;&#114;&#103;&#101;&#064;&#100;&#101;&#110;&#100;&#111;&#100;&#103;&#101;&#046;&#109;&#101;</a></li>
 			<li><strong class="lower">Web:</strong> <a href="http://dendodge.me" class="url">http://dendodge.me</a></li>
 			<li><strong class="lower">Freenode IRC:</strong> <span class="nickname">dendodge</span></li>

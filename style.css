@@ -265,6 +265,7 @@ border:none!important;
 }
 
 input[type="button"],input[type="submit"] {
+/* This doesn't validate properly, but it works everywhere and conforms to vendor specifications */
 background-image: linear-gradient(bottom, #FA6800 46%, #F38430 73%);
 background-image: -o-linear-gradient(bottom, #FA6800 46%, #F38430 73%);
 background-image: -moz-linear-gradient(bottom, #FA6800 46%, #F38430 73%);
