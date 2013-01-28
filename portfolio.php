@@ -2,8 +2,9 @@
 		<h3>Websites</h3>
 			<img src="images/website%20preview.png" class="thumbnolink" alt="dendodge.me" title="dendodge.me - You're on it!"/>
 		<h3>Written work</h3>
-			<a href="http://www.amazon.com/Thurs-Utopia-George-D-Watson/dp/145288224X"><img src="images/thurs-utopia.png" class="thumb" alt="Thur's Utopia" title="Thur's Utopia - buy it now from Amazon.com!"/></a>
+			<a href="http://rosslandtelegraph.com/news/out-space-outer-space-special-report-nasas-space-junk-plans-13653"><img src="images/rossland.png" class="thumb" alt="&quot;Out of Space in Outer Space: Special report on NASA's 'space junk' plans&quot; &mdash; Rossland Telegraph" title="&quot;Out of Space in Outer Space: Special report on NASA's 'space junk' plans&quot; &mdash; Rossland Telegraph"/></a>
 			<a href="https://en.wikinews.org/wiki/Category:George_Watson_(Wikinewsie)"><img src="images/wikinews.png" class="thumb" alt="Wikinews" title="See the complete list of articles I have written for Wikinews"/></a>
+			<a href="http://www.amazon.com/Thurs-Utopia-George-D-Watson/dp/145288224X"><img src="images/thurs-utopia.png" class="thumb" alt="Thur's Utopia" title="Thur's Utopia &mdash; buy it now from Amazon.com!"/></a>
 		<h3>Image restoration</h3>
 			<a href="https://commons.wikimedia.org/wiki/File:Storming_the_bastille_4.jpg"><img src="images/bastille.png" class="thumb" alt="Contemporary etching of the Storming of the Bastille" title="Digitally restored contemporary etching of the Storming of the Bastille"/></a>
 			<a href="https://commons.wikimedia.org/wiki/File:USS_North_Carolina_NYNY_11306-6-46.jpg"><img src="images/ship.png" class="thumb" alt="USS North Carolina (BB-55)" title="Digitally restored photograph of the USS North Carolina (BB-55)"/></a>
