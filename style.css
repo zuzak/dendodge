@@ -336,6 +336,10 @@ legend {
 text-transform:lowercase;
 }
 
+li {
+margin-bottom:10px;
+}
+
 span.currentpage {
 color:#69D2E7;
 }

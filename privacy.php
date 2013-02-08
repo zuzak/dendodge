@@ -26,9 +26,9 @@
 		<strong>Encryption:</strong><br/>
 		Some of your data <em>may not</em> be encrypted during both transmission and storage.
 		<div style="clear:both;"></div>
-	<img src="images/privacyicons/png/colour/cookies_none.png" title="We do not place cookies on your computer" alt="We do not place cookies on your computer" class="privacyicon"/>
+	<img src="images/privacyicons/png/colour/cookies_safe.png" title="We may place some cookies on your computer" alt="We may place some cookies on your computer" class="privacyicon"/>
 		<strong>Cookies:</strong><br/>
-		We do <em>not</em> place any cookies on your device for any purpose.
+		We <em>may</em> place some cookies on your device to enhance user experience; however, these cookies cannot be used to track you or your browsing habits. You can turn cookies off in most modern browsers.
 		<div style="clear:both;"></div>
 	<small>Note that where this deed disagrees with the written privacy policy below, the written policy takes priority.</small>
 </div>
