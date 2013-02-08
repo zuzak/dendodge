@@ -340,6 +340,21 @@ li {
 margin-bottom:10px;
 }
 
+::selection  {
+background-color:#F38630;
+color:#FFFFFF;
+}
+::-moz-selection {
+background-color:#F38630;
+color:#FFFFFF;
+}
+h1::selection, .navlinks a::selection, .navlinks span::selection {
+background-color:#3297FD !important;
+}
+h1::-moz-selection, .navlinks a::-moz-selection, .navlinks span::-moz-selection {
+background-color:#3297FD !important;
+}
+
 span.currentpage {
 color:#69D2E7;
 }
